@@ -1,7 +1,7 @@
 import os
 import chromadb
 # chroma_client = chromadb.Client() #Ephemeral client
-chromadb_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "chroma")
+chromadb_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".chroma")
 chroma_client = chromadb.PersistentClient(path=chromadb_path)
 
 # switch `create_collection` to `get_or_create_collection` to avoid creating a new collection every time
