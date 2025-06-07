@@ -44,3 +44,10 @@ best_distance = results['distances'][0][best_idx]
 print("Best match ID:", best_id)
 print("Best match document:", best_doc)
 print("Distance:", best_distance)
+
+# To get all matches for the first query:
+for idx, (doc_id, doc, dist) in enumerate(zip(results['ids'][0], results['documents'][0], results['distances'][0])):
+    print(f"Match {idx+1}:")
+    print("  ID:", doc_id)
+    print("  Document:", doc)
+    print("  Distance:", dist)
