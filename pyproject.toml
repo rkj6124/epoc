@@ -4,4 +4,14 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11.2"
-dependencies = []
+dependencies = [
+    "accelerate>=1.7.0",
+    # "instructorembedding>=1.0.1",
+    "bitsandbytes>=0.46.0",
+    "chromadb>=1.0.12",
+    "faiss-cpu>=1.11.0",
+    "numpy>=2.2.6",
+    "sentence-transformers>=4.1.0",
+    "torch>=2.7.1",
+    "tqdm>=4.67.1",
+]
